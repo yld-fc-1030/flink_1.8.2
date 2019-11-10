@@ -12,7 +12,7 @@ public class FlinkToKafkaJson {
         env.enableCheckpointing(1000);
 
         FlinkKafkaProducer010<String> fkp = new FlinkKafkaProducer010<String>(
-                "quickstart.cloudera:9092",//sandbox-hd
+                "quickstart.cloudera:9092",//
                 "UserBehavior_json",
                 new SimpleStringSchema()
         );

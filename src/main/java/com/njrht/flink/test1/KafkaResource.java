@@ -38,7 +38,7 @@ public class KafkaResource {
                         .property("zookeeper.connect","192.168.184.10:2181")
                         .property("bootstrap.servers","192.168.184.10:9092")
                         .startFromEarliest()//从最早的数据进行消费，忽略存储的offset信息
-//                        .sinkPartitionerFixed()//每个flink分区最多在一个kafka分区中结束
+//                        .sinkPartitionerFixed()//每个flink分区最多在一个kafka分区中结束//
         )
                 .withFormat(
                         new Csv()
